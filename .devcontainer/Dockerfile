@@ -9,6 +9,9 @@ ARG USER_GID=$USER_UID
 # Set the working directory.
 WORKDIR /home/${USERNAME}/site
 
+# Set the deno directory
+ENV DENO_DIR=/home/${USERNAME}/.deno
+
 # Change the UID/GID of the existing deno user
 RUN groupmod --gid $USER_GID $USERNAME \
     # modify the deno user id and group id
