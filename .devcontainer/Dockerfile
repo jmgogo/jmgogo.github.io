@@ -9,7 +9,7 @@ ARG USER_GID=$USER_UID
 # Set the working directory.
 WORKDIR /home/${USERNAME}/site
 
-# Set the deno directory
+# Set the deno global cache directory
 ENV DENO_DIR=/home/${USERNAME}/.deno
 
 # Change the UID/GID of the existing deno user
