@@ -21,8 +21,9 @@ build/Release
 # Dependency directories
 node_modules/
 
-# TypeScript cache
+# TypeScript
 *.tsbuildinfo
+next-env.d.ts
 
 # Optional npm cache directory
 .npm
@@ -50,5 +51,10 @@ node_modules/
 .next
 out
 
+# production
+/build
+
 # Stores VSCode versions used for testing VSCode extensions
 .vscode-test
+
+portfolio/*
