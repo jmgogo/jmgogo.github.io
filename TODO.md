@@ -16,8 +16,11 @@
   - [ ] Blog
     - https://vercel.com/templates/next.js/blog-starter-kit
   - [ ] Resume
-- [ ] Deploy App to Github Pages
-  - https://www.freecodecamp.org/news/how-to-deploy-next-js-app-to-github-pages/
+- [ ] Deploy App 
+  - Option: #1 to Github Pages: https://www.freecodecamp.org/news/how-to-deploy-next-js-app-to-github-pages/
+  - Option: #2 Vercel
+    - vercel web analytics
+    - vercel speed insights
 
 ## DONE ✅
 
