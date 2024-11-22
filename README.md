@@ -11,7 +11,7 @@ Deploy your Nextfolio site with Vercel in minutes.
 - Framework: [Next.js](https://nextjs.org/)
 - Typography: [Vercel Geist Font](https://vercel.com/font)
 - Styling: [Tailwind CSS](https://tailwindcss.com/)
-- Analytics: [Vercel Web Analytics](https://vercel.com/docs/speed-insights) and [Speed Insights](https://vercel.com/docs/speed-insights)
+- Analytics: [Vercel Web Analytics](https://vercel.com/docs/analytics) and [Speed Insights](https://vercel.com/docs/speed-insights)
 - Deployment: [Vercel](https://vercel.com/)
 
 ## Features
