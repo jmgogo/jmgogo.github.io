@@ -39,7 +39,7 @@ html {
 }
 
 .prose {
-  @apply text-[#333333] dark:text-[#d4d4d4];
+  @apply text-[#333333] dark:text-[#D4D4D4];
 }
 
 .prose .anchor {
@@ -56,9 +56,7 @@ html {
 }
 
 .prose a {
-  @apply transition-all decoration-neutral-400 dark:decoration-neutral-600
-    underline-offset-2 decoration-[0.1em] font-normal text-[#333333]
-    dark:text-[#d4d4d4];
+  @apply transition-all decoration-neutral-400 dark:decoration-neutral-600 underline-offset-2 decoration-[0.1em] font-normal text-[#333333] dark:text-[#D4D4D4];
 }
 
 .prose a:hover {
@@ -75,7 +73,7 @@ html {
 }
 
 .prose pre {
-  @apply bg-[#f7f7f7] dark:bg-[#181818] rounded-lg overflow-x-auto;
+  @apply bg-[#F7F7F7] dark:bg-[#181818] rounded-lg overflow-x-auto;
 }
 
 .prose code {

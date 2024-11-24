@@ -1,6 +1,5 @@
-import fs from "node:fs";
-import path from "node:path";
-import process from "node:process";
+import fs from "fs";
+import path from "path";
 
 type Metadata = {
   title: string;
@@ -11,17 +10,17 @@ type Metadata = {
 };
 
 function parseFrontmatter(fileContent: string) {
-  const frontmatterRegex = /---\s*([\s\S]*?)\s*---/;
-  const match = frontmatterRegex.exec(fileContent);
-  const frontMatterBlock = match![1];
-  const content = fileContent.replace(frontmatterRegex, "").trim();
-  const frontMatterLines = frontMatterBlock.trim().split("\n");
-  const metadata: Partial<Metadata> = {};
+  let frontmatterRegex = /---\s*([\s\S]*?)\s*---/;
+  let match = frontmatterRegex.exec(fileContent);
+  let frontMatterBlock = match![1];
+  let content = fileContent.replace(frontmatterRegex, "").trim();
+  let frontMatterLines = frontMatterBlock.trim().split("\n");
+  let metadata: Partial<Metadata> = {};
 
   frontMatterLines.forEach((line) => {
-    const [key, ...valueArr] = line.split(": ");
+    let [key, ...valueArr] = line.split(": ");
     let value = valueArr.join(": ").trim();
-    value = value.replace(/^['"](.*)['"]$/, "$1");
+    value = value.replace(/^['"](.*)['"]$/, "$1"); 
     metadata[key.trim() as keyof Metadata] = value;
   });
 
@@ -33,15 +32,15 @@ function getMDXFiles(dir: string) {
 }
 
 function readMDXFile(filePath: string) {
-  const rawContent = fs.readFileSync(filePath, "utf-8");
+  let rawContent = fs.readFileSync(filePath, "utf-8");
   return parseFrontmatter(rawContent);
 }
 
 function getMDXData(dir: string) {
-  const mdxFiles = getMDXFiles(dir);
+  let mdxFiles = getMDXFiles(dir);
   return mdxFiles.map((file) => {
-    const { metadata, content } = readMDXFile(path.join(dir, file));
-    const slug = path.basename(file, path.extname(file));
+    let { metadata, content } = readMDXFile(path.join(dir, file));
+    let slug = path.basename(file, path.extname(file));
 
     return {
       metadata,
@@ -56,15 +55,15 @@ export function getBlogPosts() {
 }
 
 export function formatDate(date: string, includeRelative = false) {
-  const currentDate = new Date();
+  let currentDate = new Date();
   if (!date.includes("T")) {
     date = `${date}T00:00:00`;
   }
-  const targetDate = new Date(date);
+  let targetDate = new Date(date);
 
-  const yearsAgo = currentDate.getFullYear() - targetDate.getFullYear();
-  const monthsAgo = currentDate.getMonth() - targetDate.getMonth();
-  const daysAgo = currentDate.getDate() - targetDate.getDate();
+  let yearsAgo = currentDate.getFullYear() - targetDate.getFullYear();
+  let monthsAgo = currentDate.getMonth() - targetDate.getMonth();
+  let daysAgo = currentDate.getDate() - targetDate.getDate();
 
   let formattedDate = "";
 
@@ -78,7 +77,7 @@ export function formatDate(date: string, includeRelative = false) {
     formattedDate = "Today";
   }
 
-  const fullDate = targetDate.toLocaleString("en-us", {
+  let fullDate = targetDate.toLocaleString("en-us", {
     month: "short",
     day: "numeric",
     year: "numeric",

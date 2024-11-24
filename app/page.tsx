@@ -31,7 +31,7 @@ export default function Page() {
           embeds, KaTeX integration, and{" "}
           <a
             target="_blank"
-            href="https://github.com/jmgogo/jmgogo.github.io?tab=readme-ov-file#features"
+            href="https://github.com/1msirius/Nextfolio?tab=readme-ov-file#features"
           >
             more
           </a>

@@ -9,11 +9,13 @@ import {
   FaLinkedinIn,
 } from "react-icons/fa6";
 import { TbMailFilled } from "react-icons/tb";
-import { metaData, socialLinks } from "app/config";
+import { metaData, socialLinks } from "@/app/config";
+import type { IconType } from "react-icons";
 
 const YEAR = new Date().getFullYear();
 
-function SocialLink({ href, icon: Icon }) {
+function SocialLink({ href, icon}: { href: string; icon: IconType }) {
+  const Icon = icon;
   return (
     <a href={href} target="_blank" rel="noopener noreferrer">
       <Icon />
