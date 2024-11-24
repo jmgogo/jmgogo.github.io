@@ -29,16 +29,12 @@ RUN groupmod --gid $USER_GID $USERNAME \
 # The port that your application listens to.
 EXPOSE 3000
 
-# Set environment variables for pnpm
-# ENV PNPM_HOME="/home/$USERNAME/"
-# ENV PATH="$PNPM_HOME:$PATH"
-
 # Enable pnpm with node's corepack
 RUN corepack enable pnpm \
     # pin the version of pnpm used
-    && corepack use pnpm@latest 
+    && corepack use pnpm@latest \
     # configure pnpm to use home store
-    # && pnpm config set store-dir $PNPM_HOME/.pnpm-store
+    && pnpm config set store-dir $PNPM_HOME/.pnpm-store
 
 # Prefer not to run as root.
 USER $USERNAME
