@@ -1,14 +1,16 @@
 name: MySite
 services:
   app:
-    image: deno:latest
+    image: node:latest
     build:
       context: .
       dockerfile: Dockerfile
-    user: deno
+    user: node
 
     volumes:
-      - ../:/home/deno/site
+      - ../:/home/node/site
+      # - pnpm-store:/home/node/.pnpm-store
+
 
     # Overrides default command so things don't shut down after the process ends.
     command: sleep infinity
@@ -31,3 +33,4 @@ services:
 
 volumes:
   postgres-data:
+  # pnpm-store:

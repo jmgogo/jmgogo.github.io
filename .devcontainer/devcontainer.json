@@ -2,7 +2,7 @@
   "name": "MySite",
   "dockerComposeFile": "compose.yaml",
   "service": "app",
-  "workspaceFolder": "/home/deno/site",
+  "workspaceFolder": "/home/node/site",
 
   // Features to add to the dev container. More info: https://containers.dev/features.
   "features": {
@@ -33,22 +33,18 @@
   "customizations": {
     "vscode": {
       "extensions": [
-        "justjavac.vscode-deno-extensionpack",
         "Codeium.codeium",
         "mutantdino.resourcemonitor" // https://code.visualstudio.com/docs/devcontainers/tips-and-tricks#_speeding-up-containers-in-docker-desktop
       ],
 
       "settings": {
-        // reference: https://docs.deno.com/runtime/reference/vscode/
-        "deno.enable": true,
-        "deno.lint": true,
-        "editor.defaultFormatter": "denoland.vscode-deno"
+       
       }
     }
   },
 
   // Use 'postCreateCommand' to run commands after the container is created.
-  "postCreateCommand": "deno -version"
+  "postCreateCommand": "pnpm -v"
   // Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
   // "remoteUser": "root"
 }
