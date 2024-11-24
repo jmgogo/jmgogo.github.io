@@ -24,9 +24,7 @@
 
 ## DONE ✅
 
-- [x] Setup basic HTTP server in Deno
 - [x] Fork repo to create template devcontainer
-- [x] Give deno user access to /deno-dir directory
 - [x] Fix ssh in devcontainer
 - [x] Init next app
 
@@ -43,5 +41,4 @@
     https://code.visualstudio.com/docs/devcontainers/containers#_personalizing-with-dotfile-repositories
   - Reference: https://github.com/ryanb/dotfiles
   - Reference: https://github.com/webpro/awesome-dotfiles
-  - Setup deno bash completions:
-    https://docs.deno.com/runtime/getting_started/setup_your_environment/#bash-example
+  - Setup bash completions:
