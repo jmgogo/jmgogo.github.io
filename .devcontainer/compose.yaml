@@ -1,14 +1,14 @@
 name: MySite
 services:
   app:
-    image: node:latest
+    image: node:23-slim
     build:
       context: .
       dockerfile: Dockerfile
     user: node
 
     volumes:
-      - ../:/home/node/site
+      - mysite:/home/node/site
 
     # Overrides default command so things don't shut down after the process ends.
     command: sleep infinity
@@ -31,3 +31,4 @@ services:
 
 volumes:
   postgres-data:
+  mysite:

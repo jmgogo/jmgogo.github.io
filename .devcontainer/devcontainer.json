@@ -34,7 +34,8 @@
     "vscode": {
       "extensions": [
         "Codeium.codeium",
-        "mutantdino.resourcemonitor" // https://code.visualstudio.com/docs/devcontainers/tips-and-tricks#_speeding-up-containers-in-docker-desktop
+        "mutantdino.resourcemonitor", // https://code.visualstudio.com/docs/devcontainers/tips-and-tricks#_speeding-up-containers-in-docker-desktop
+        "esbenp.prettier-vscode"
       ],
 
       "settings": {
@@ -44,7 +45,8 @@
   },
 
   // Use 'postCreateCommand' to run commands after the container is created.
-  "postCreateCommand": "pnpm -v"
+  "postCreateCommand": "npm -v"
+  
   // Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
   // "remoteUser": "root"
 }
