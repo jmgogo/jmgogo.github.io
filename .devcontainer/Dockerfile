@@ -29,16 +29,8 @@ RUN groupmod --gid $USER_GID $USERNAME \
 # The port that your application listens to.
 EXPOSE 3000
 
-ENV PNPM_HOME="/home/${USERNAME}/pnpm"
-ENV PATH="$PNPM_HOME:$PATH"
-
-# Enable pnpm with node's corepack
-RUN corepack enable pnpm \
-    # pin the version of pnpm used
-    && corepack use pnpm@latest
-
 # Prefer not to run as root.
 USER $USERNAME
 
 # The CMD line in the Dockerfile determines parameters passed to node.
-CMD ["pnpm", "run", "dev"]
+CMD ["npm", "run", "dev"]
