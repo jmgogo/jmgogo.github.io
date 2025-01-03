@@ -34,7 +34,8 @@
     "vscode": {
       "extensions": [
         "Codeium.codeium",
-        "mutantdino.resourcemonitor" // https://code.visualstudio.com/docs/devcontainers/tips-and-tricks#_speeding-up-containers-in-docker-desktop
+        "mutantdino.resourcemonitor", // https://code.visualstudio.com/docs/devcontainers/tips-and-tricks#_speeding-up-containers-in-docker-desktop
+        "esbenp.prettier-vscode"
       ],
 
       "settings": {
