@@ -11,9 +11,10 @@
 
 - [ ] Routes
   - [ ] Home
-  - [ ] README / About ME
+  - [ ] About
   - [ ] Projects
   - [ ] Blog
+  - [ ] Contact
     - https://vercel.com/templates/next.js/blog-starter-kit
   - [ ] Resume
 - [ ] Deploy App 
