@@ -13,21 +13,21 @@ export default function Footer() {
           </div>
           <div className="flex items-center space-x-6 mt-4 sm:mt-0">
             <Link
-              href="https://twitter.com/yourusername"
+              href="https://x.com/fullstack_jmg"
               className="text-gray-400 hover:text-gray-500"
             >
               <span className="sr-only">Twitter</span>
               <Twitter className="h-6 w-6" aria-hidden="true" />
             </Link>
             <Link
-              href="https://github.com/yourusername"
+              href="https://github.com/jmgogo"
               className="text-gray-400 hover:text-gray-500"
             >
               <span className="sr-only">GitHub</span>
               <Github className="h-6 w-6" aria-hidden="true" />
             </Link>
             <Link
-              href="https://linkedin.com/in/yourusername"
+              href="https://linkedin.com/in/jmgogo"
               className="text-gray-400 hover:text-gray-500"
             >
               <span className="sr-only">LinkedIn</span>
