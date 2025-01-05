@@ -1,5 +1,5 @@
 import Image from "next/image";
-import heroImage from "../public/worm.jpg";
+import heroImage from "../public/coding.gif";
 
 export default function Hero() {
   return (
