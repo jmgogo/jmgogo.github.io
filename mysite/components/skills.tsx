@@ -44,7 +44,8 @@ export default function SkillsSection() {
     { name: "Cameo" },
   ];
 
-  const getRandomColor = () => {
+  // TODO: Add a random color to each skill
+/*   const getRandomColor = () => {
     const colors = [
       "red-500",
       "yellow-500",
@@ -55,7 +56,7 @@ export default function SkillsSection() {
       "pink-500",
     ];
     return colors[Math.floor(Math.random() * colors.length)];
-  };
+  }; */
 
   return (
     <section className="py-8 px-4 max-w-5xl mx-auto bg-gray-100 font-mono flex items-center justify-center">
