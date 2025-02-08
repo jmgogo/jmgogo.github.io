@@ -43,3 +43,4 @@
   - Reference: https://github.com/ryanb/dotfiles
   - Reference: https://github.com/webpro/awesome-dotfiles
   - Setup bash completions:
+  - VCR Effect: https://codepen.io/Mobius1/pen/ZNgwbr
