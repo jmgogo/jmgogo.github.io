@@ -33,6 +33,11 @@
 
 - [ ] About me bot with EVI
       https://vercel.com/templates/next.js/empathic-voice-interface-starter
+- [ ] Add sprites
+  - https://craftpix.net/freebies/free-pixel-art-tiny-hero-sprites/
+  - https://tinkersynth.com/slopes/
+- [ ] Add sound effects
+  - https://www.joshwcomeau.com/react/announcing-use-sound-react-hook/
 - [ ] Email client interface?
       https://vercel.com/templates/next.js/next-js-email-client
 - [ ] Sound effects, lofi background
