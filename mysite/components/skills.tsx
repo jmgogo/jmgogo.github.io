@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "motion/react";
+import GridPaper from "./grid-paper";
 
 interface Skill {
   name: string;
@@ -44,53 +45,41 @@ export default function SkillsSection() {
     { name: "Cameo" },
   ];
 
-  // TODO: Add a random color to each skill
-/*   const getRandomColor = () => {
-    const colors = [
-      "red-500",
-      "yellow-500",
-      "green-500",
-      "blue-500",
-      "indigo-500",
-      "purple-500",
-      "pink-500",
-    ];
-    return colors[Math.floor(Math.random() * colors.length)];
-  }; */
-
   return (
-    <section className="py-8 px-4 max-w-5xl mx-auto bg-gray-100 font-mono flex items-center justify-center">
-      <div
-        className="flex flex-wrap items-center justify-center
-      gap-4 "
-      >
-        {skills.map((skill, index) => (
-          <motion.div
-            key={skill.name}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.3, delay: index * 0.05 }}
-            className="group relative"
-          >
-            <div
-              className={`
+    <GridPaper>
+      <section className="py-16 px-4 max-w-6xl mx-auto font-mono pb-32">
+        <h2 className="text-3xl font-bold text-center mb-12">
+          Technical Skills
+        </h2>
+        <div className="flex flex-wrap justify-center gap-3">
+          {skills.map((skill, index) => (
+            <motion.div
+              key={skill.name}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.3, delay: index * 0.05 }}
+              className="group relative"
+            >
+              <div
+                className={`
                 absolute inset-0 bg-red-500 
               `}
-            />
-            <div
-              className={`
+              />
+              <div
+                className={`
                 relative inline-flex px-2 py-1  text-sm font-medium
                 bg-gray-300 text-gray-800
                 transform transition-all duration-200
                 group-hover:-translate-x-1 group-hover:-translate-y-1
                 cursor-default shadow-sm group
               `}
-            >
-              {skill.name}
-            </div>
-          </motion.div>
-        ))}
-      </div>
-    </section>
+              >
+                {skill.name}
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      </section>
+    </GridPaper>
   );
 }
