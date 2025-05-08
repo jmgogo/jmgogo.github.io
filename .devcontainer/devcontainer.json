@@ -34,9 +34,11 @@
     "vscode": {
       "extensions": [
         "Codeium.codeium",
-        "mutantdino.resourcemonitor", // https://code.visualstudio.com/docs/devcontainers/tips-and-tricks#_speeding-up-containers-in-docker-desktop
+        "mutantdino.resourcemonitor",
         "esbenp.prettier-vscode",
-        "bradlc.vscode-tailwindcss"
+        "bradlc.vscode-tailwindcss",
+        "austenc.tailwind-docs",
+        "PulkitGangwar.nextjs-snippets"
       ],
 
       "settings": {
