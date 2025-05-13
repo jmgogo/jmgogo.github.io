@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "motion/react";
-import GridPaper from "./grid-paper";
+import GridPaper from "../backgrounds/grid-paper";
 
 interface Skill {
   name: string;
